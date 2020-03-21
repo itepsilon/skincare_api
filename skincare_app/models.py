@@ -1,6 +1,7 @@
 from django.db import models
 
 class Product(models.Model):
-    name = models.CharField(max_length=30)
-    description = models.CharField(max_length=500)
-    price = models.DecimalField(max_digits=8, decimal_places=2)
+    name = models.CharField(max_length=30, blank=True, null=True)
+    description = models.CharField(max_length=500, blank=True, null=True)
+    price = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
+    image_url = models.CharField(max_length=500, blank=True, null=True)
