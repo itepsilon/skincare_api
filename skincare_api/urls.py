@@ -16,12 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from rest_framework_simplejwt import views as jwt_views
-from skincare_app import views as app_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('^api-auth/', include('rest_framework.urls')),
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/products/$', app_views.ListProducts.as_view(), name="products"),
+    path('api/products/$', name="product_collection")
 ]
