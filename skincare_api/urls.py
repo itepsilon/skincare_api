@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from rest_framework_simplejwt import views as jwt_views
-from skincare_app import views import app_views
+from skincare_app import views as app_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
