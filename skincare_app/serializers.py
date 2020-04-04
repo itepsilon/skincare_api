@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Product
+from skincare_app.models import Product
 
 # Serializers define the API representation.
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
