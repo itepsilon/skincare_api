@@ -15,7 +15,7 @@ cryptography==2.8
 distlib==0.3.0
 Django==3.0.3
 django-filter==2.2.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.4.0
 docker==4.2.0
 docker-compose==1.25.4
