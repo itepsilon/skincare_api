@@ -32,7 +32,7 @@ jsonschema==3.2.0
 Markdown==3.2.1
 msgpack==1.0.0
 mysqlclient==1.4.6
-paramiko==2.7.1
+paramiko==2.10.1
 pathspec==0.5.9
 pycparser==2.20
 PyJWT==1.7.1
